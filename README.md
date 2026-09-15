@@ -23,7 +23,7 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 
 | Tugas | Diberikan | Deadline | Status |
 |---|---|---|---|
-| [P1 Latihan File I/O (Python)](2026-09-09-p1-latihan-file-io-python/) | Rabu 9 Sep 2026 | Senin 14 Sep 2026 23.59 | selesai, output 32/32 sel cocok acuan |
+| [P1 Latihan File I/O (Python)](2026-09-09-p1-latihan-file-io-python/) | Rabu 9 Sep 2026 | Minggu 20 Sep 2026 23.59 (Teams) | selesai, output 32/32 sel cocok acuan |
 
 ## P1 Latihan File I/O (Python)
 
