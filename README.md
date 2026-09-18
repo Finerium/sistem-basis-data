@@ -28,6 +28,13 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 |---|---|---|---|
 | [P1 Latihan File I/O (Python)](2026-09-09-p1-latihan-file-io-python/) | Rabu 9 Sep 2026 | Minggu 20 Sep 2026 23.59 (Teams) | selesai, output 32/32 sel cocok acuan |
 
+## Pertemuan teori
+
+| Pertemuan | Tanggal | Materi | Catatan |
+|---|---|---|---|
+| Teori 1 | Jumat 11 Sep 2026 | Chapter 1 Introduction, file system dibanding DBMS, pembagian 4 SKS | foto papan dan slide disimpan lokal |
+| Teori 2 | Jumat 18 Sep 2026 | Model data relasional, 3 lapisan abstraksi, data storage dan indexing (dense, sparse, multi-level, m-way tree, B-tree, B+ tree) | [`catatan.md`](2026-09-18-pertemuan-2/catatan.md), tidak ada tugas yang disebut |
+
 ## P1 Latihan File I/O (Python)
 
 Latihan membaca, mencari, menambah, mengubah, dan menghapus data pada berkas CSV
