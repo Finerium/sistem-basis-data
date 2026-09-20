@@ -12,10 +12,10 @@ Politeknik Negeri Bandung. Semester Ganjil 2026/2027.
 | Jenis | Waktu | Ruang | Dosen |
 |---|---|---|---|
 | Praktikum | Selasa 13.00 - 16.30 | D107 Lab. RPL | Djoko Cahyo Utomo L, S.Kom., M.MT. |
-| Teori | Senin 10.40 - 12.20 | menyusul | Dr. Ade Chandra Nugraha, S.Si., M.T. |
+| Teori | Senin 10.40 - 12.20 | D111 | Dr. Ade Chandra Nugraha, S.Si., M.T. |
 
 Mulai 21 September 2026 teori pindah dari Jumat 08.40 (D217) ke Senin jam ke-5 sampai ke-6,
-yaitu 10.40 - 12.20. Ruangnya masih menyusul.
+yaitu 10.40 - 12.20, ruang D111.
 
 Beban 4 SKS: 2 SKS teori (2 x 50 menit terjadwal, 2 x 50 menit tugas terstruktur,
 2 x 60 menit eksplorasi mandiri) dan 2 SKS praktik (2 x 160 menit terjadwal).
