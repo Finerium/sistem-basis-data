@@ -27,7 +27,7 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 | Tugas | Diberikan | Deadline | Status |
 |---|---|---|---|
 | [P1 Latihan File I/O (Python)](2026-09-09-p1-latihan-file-io-python/) | Rabu 9 Sep 2026 | Minggu 20 Sep 2026 23.59 (Teams) | selesai, output 32/32 sel cocok acuan |
-| [P2 Latihan Indexing (Python)](2026-09-22-p2-latihan-indexing/) | Selasa 22 Sep 2026 | Selasa 22 Sep 2026 17.30 (Teams) | selesai, output 10/10 sel cocok acuan (sel mount Google Drive sengaja beda) |
+| [P2 Latihan Indexing (Python)](2026-09-22-p2-latihan-indexing/) | Selasa 22 Sep 2026 | Selasa 22 Sep 2026 17.30 (Teams) | selesai, output 10/10 sel cocok acuan (sel mount Google Drive sengaja beda), plus pengayaan analisis index dan B+Tree |
 
 ## Pertemuan teori
 
@@ -56,10 +56,14 @@ Hal yang ditiru dari output acuan: position di B-Tree disimpan sebagai (nomor bl
 bukan index di dalam block seperti yang tertulis di komentar template, dan traversal dicetak preorder dengan
 indentasi tiga spasi per level.
 
-Di akhir notebook ada bagian pengayaan (opsional di intro dosen): jumlah perbandingan NIM untuk full scan, dense
-index, sparse index (scan linear dan binary search), dan B-Tree, dihitung pada 200 record dan 20.000 record
-buatan. Hasilnya, tanpa index rata-rata 10.000,50 perbandingan untuk 20.000 record, sedangkan dengan index yang
-dicari secara efisien hanya sekitar 13 sampai 16.
+Di akhir notebook ada dua bagian pengayaan (opsional di intro dosen, ketiga pilihan yang ditawarkan dikerjakan):
+
+- Analisis pencarian tanpa dan dengan index, ditambah data 20.000 record buatan: jumlah perbandingan NIM untuk
+  full scan, dense index, sparse index (scan linear dan binary search), dan B-Tree. Tanpa index rata-rata
+  10.000,50 perbandingan untuk 20.000 record, dengan index yang dicari secara efisien hanya sekitar 13 sampai 16.
+- Implementasi B+Tree (key pemisah di node internal, leaf berantai, pencarian rentang), dicek kebenarannya dan
+  dibandingkan dengan B-Tree untuk NIM yang dimasukkan terurut maupun acak. B+Tree membaca lebih sedikit node untuk
+  pencarian rentang, tetapi sebagian besar selisihnya datang dari aturan pemecahan node, bukan hanya strukturnya.
 
 ## P1 Latihan File I/O (Python)
 
