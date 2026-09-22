@@ -27,6 +27,7 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 | Tugas | Diberikan | Deadline | Status |
 |---|---|---|---|
 | [P1 Latihan File I/O (Python)](2026-09-09-p1-latihan-file-io-python/) | Rabu 9 Sep 2026 | Minggu 20 Sep 2026 23.59 (Teams) | selesai, output 32/32 sel cocok acuan |
+| [P2 Latihan Indexing (Python)](2026-09-22-p2-latihan-indexing/) | Selasa 22 Sep 2026 | Selasa 22 Sep 2026 17.30 (Teams) | selesai, output 10/10 sel cocok acuan (sel mount Google Drive sengaja beda) |
 
 ## Pertemuan teori
 
@@ -34,6 +35,31 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 |---|---|---|---|
 | Teori 1 | Jumat 11 Sep 2026 | Chapter 1 Introduction, file system dibanding DBMS, pembagian 4 SKS | foto papan dan slide disimpan lokal |
 | Teori 2 | Jumat 18 Sep 2026 | Model data relasional, 3 lapisan abstraksi, data storage dan indexing (dense, sparse, multi-level, m-way tree, B-tree, B+ tree) | [`catatan.md`](2026-09-18-pertemuan-2/catatan.md), tidak ada tugas yang disebut |
+
+## P2 Latihan Indexing (Python)
+
+Latihan menyimpan 200 record mahasiswa ke block berisi 10 record, lalu membuat tiga jenis index untuk
+mempercepat pencarian berdasarkan NIM: dense index (satu entry per record), sparse index (satu entry per
+block), dan B-Tree dengan t = 3.
+
+```
+2026-09-22-p2-latihan-indexing/
+  Tugas_P2_2B_048.ipynb   notebook yang dikumpulkan, sudah dieksekusi
+  mahasiswa.csv           dataset 200 mahasiswa (NIM, Nama, Nilai) dari dosen
+```
+
+Sama seperti P1, notebook dijalankan lokal, bukan di Google Colab, jadi mount Google Drive dikomentari dan
+`csv_path` menunjuk ke folder notebook. Output setiap sel lain sama persis dengan output acuan di template
+dosen, termasuk traversal B-Tree 98 node.
+
+Hal yang ditiru dari output acuan: position di B-Tree disimpan sebagai (nomor block, index baris di data),
+bukan index di dalam block seperti yang tertulis di komentar template, dan traversal dicetak preorder dengan
+indentasi tiga spasi per level.
+
+Di akhir notebook ada bagian pengayaan (opsional di intro dosen): jumlah perbandingan NIM untuk full scan, dense
+index, sparse index (scan linear dan binary search), dan B-Tree, dihitung pada 200 record dan 20.000 record
+buatan. Hasilnya, tanpa index rata-rata 10.000,50 perbandingan untuk 20.000 record, sedangkan dengan index yang
+dicari secara efisien hanya sekitar 13 sampai 16.
 
 ## P1 Latihan File I/O (Python)
 
