@@ -29,7 +29,7 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 | [P1 Latihan File I/O (Python)](2026-09-09-p1-latihan-file-io-python/) | Rabu 9 Sep 2026 | Minggu 20 Sep 2026 23.59 (Teams) | selesai, output 32/32 sel cocok acuan |
 | [P2 Latihan Indexing (Python)](2026-09-22-p2-latihan-indexing/) | Selasa 22 Sep 2026 | Selasa 22 Sep 2026 17.30 (Teams) | selesai, output 10/10 sel cocok acuan (sel mount Google Drive sengaja beda), plus pengayaan analisis index dan B+Tree |
 | [P3 Pemodelan Data dengan PowerDesigner](2026-09-29-p3-pemodelan-powerdesigner/) | Selasa 29 Sep 2026 | Minggu 4 Okt 2026 23.59 (Teams) | selesai, CDM/LDM/PDM format PowerDesigner + DDL PostgreSQL teruji 42/42, laporan 37 halaman |
-| [P4 Rev Pemodelan Data dan Referential Integrity](2026-10-06-p4-revisi-ri-constraint/) | Selasa 6 Okt 2026 | Senin 12 Okt 2026 23.59 (Teams) | selesai, revisi P3 + aksi RI per relasi (CASCADE, RESTRICT, SET NULL, SET DEFAULT, NO ACTION) + 27 index, uji 42 constraint dan 17 RI lolos, laporan 44 halaman |
+| [P4 Rev Pemodelan Data dan Referential Integrity](2026-10-06-p4-revisi-ri-constraint/) | Selasa 6 Okt 2026 | Senin 12 Okt 2026 23.59 (Teams) | selesai, revisi P3 (nama relasi jelas, check model 87 error jadi 0, ERD sesuai business rule) + aksi RI per relasi + 27 index, uji 42 constraint dan 17 RI lolos, laporan 50 halaman |
 
 ## Pertemuan teori
 

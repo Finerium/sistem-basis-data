@@ -282,61 +282,61 @@ create table log_audit (
    constraint ck_log_pelaku check ((jenis_pelaku = 'SYSTEM' AND id_akun IS NULL) OR (jenis_pelaku = 'PENGGUNA' AND id_akun IS NOT NULL))
 );
 
-alter table anggota add constraint fk_anggota_r22 foreign key (id_akun)
+alter table anggota add constraint fk_anggota_akun foreign key (id_akun)
    references akun (id_akun) on delete restrict on update cascade;
-alter table telepon_anggota add constraint fk_telepon_anggota_r28 foreign key (id_anggota)
+alter table telepon_anggota add constraint fk_telepon_anggota_anggota foreign key (id_anggota)
    references anggota (id_anggota) on delete cascade on update cascade;
-alter table petugas add constraint fk_petugas_r23 foreign key (id_akun)
+alter table petugas add constraint fk_petugas_akun foreign key (id_akun)
    references akun (id_akun) on delete restrict on update cascade;
-alter table buku add constraint fk_buku_r01 foreign key (id_penerbit)
+alter table buku add constraint fk_buku_penerbit foreign key (id_penerbit)
    references penerbit (id_penerbit) on delete restrict on update cascade;
-alter table buku add constraint fk_buku_r02 foreign key (id_kategori)
+alter table buku add constraint fk_buku_kategori foreign key (id_kategori)
    references kategori (id_kategori) on delete set default on update cascade;
-alter table buku_penulis add constraint fk_buku_penulis_r04 foreign key (id_buku)
+alter table buku_penulis add constraint fk_buku_penulis_buku foreign key (id_buku)
    references buku (id_buku) on delete cascade on update cascade;
-alter table buku_penulis add constraint fk_buku_penulis_r05 foreign key (id_penulis)
+alter table buku_penulis add constraint fk_buku_penulis_penulis foreign key (id_penulis)
    references penulis (id_penulis) on delete restrict on update cascade;
-alter table eksemplar_buku add constraint fk_eksemplar_buku_r03 foreign key (id_buku)
+alter table eksemplar_buku add constraint fk_eksemplar_buku_buku foreign key (id_buku)
    references buku (id_buku) on delete restrict on update cascade;
-alter table peminjaman add constraint fk_peminjaman_r06 foreign key (id_anggota)
+alter table peminjaman add constraint fk_peminjaman_anggota foreign key (id_anggota)
    references anggota (id_anggota) on delete restrict on update cascade;
-alter table peminjaman add constraint fk_peminjaman_r07 foreign key (id_petugas)
+alter table peminjaman add constraint fk_peminjaman_petugas foreign key (id_petugas)
    references petugas (id_petugas) on delete restrict on update cascade;
-alter table peminjaman add constraint fk_peminjaman_r08 foreign key (id_kebijakan)
+alter table peminjaman add constraint fk_peminjaman_kebijakan_peminjaman foreign key (id_kebijakan)
    references kebijakan_peminjaman (id_kebijakan) on delete restrict on update cascade;
-alter table detail_peminjaman add constraint fk_detail_peminjaman_r09 foreign key (id_peminjaman)
+alter table detail_peminjaman add constraint fk_detail_peminjaman_peminjaman foreign key (id_peminjaman)
    references peminjaman (id_peminjaman) on delete cascade on update cascade;
-alter table detail_peminjaman add constraint fk_detail_peminjaman_r10 foreign key (id_eksemplar)
+alter table detail_peminjaman add constraint fk_detail_peminjaman_eksemplar_buku foreign key (id_eksemplar)
    references eksemplar_buku (id_eksemplar) on delete restrict on update cascade;
-alter table detail_peminjaman add constraint fk_detail_peminjaman_r11 foreign key (id_petugas)
+alter table detail_peminjaman add constraint fk_detail_peminjaman_petugas foreign key (id_petugas)
    references petugas (id_petugas) on delete restrict on update cascade;
-alter table perpanjangan add constraint fk_perpanjangan_r12 foreign key (id_detail)
+alter table perpanjangan add constraint fk_perpanjangan_detail_peminjaman foreign key (id_detail)
    references detail_peminjaman (id_detail) on delete cascade on update cascade;
-alter table perpanjangan add constraint fk_perpanjangan_r13 foreign key (id_akun)
+alter table perpanjangan add constraint fk_perpanjangan_akun foreign key (id_akun)
    references akun (id_akun) on delete restrict on update cascade;
-alter table reservasi add constraint fk_reservasi_r14 foreign key (id_anggota)
+alter table reservasi add constraint fk_reservasi_anggota foreign key (id_anggota)
    references anggota (id_anggota) on delete cascade on update cascade;
-alter table reservasi add constraint fk_reservasi_r15 foreign key (id_buku)
+alter table reservasi add constraint fk_reservasi_buku foreign key (id_buku)
    references buku (id_buku) on delete restrict on update cascade;
-alter table reservasi add constraint fk_reservasi_r16 foreign key (id_kebijakan)
+alter table reservasi add constraint fk_reservasi_kebijakan_peminjaman foreign key (id_kebijakan)
    references kebijakan_peminjaman (id_kebijakan) on delete restrict on update cascade;
-alter table reservasi add constraint fk_reservasi_r17 foreign key (id_eksemplar)
+alter table reservasi add constraint fk_reservasi_eksemplar_buku foreign key (id_eksemplar)
    references eksemplar_buku (id_eksemplar) on delete set null on update cascade;
-alter table reservasi add constraint fk_reservasi_r18 foreign key (id_detail)
+alter table reservasi add constraint fk_reservasi_detail_peminjaman foreign key (id_detail)
    references detail_peminjaman (id_detail) on delete restrict on update cascade;
-alter table denda add constraint fk_denda_r19 foreign key (id_detail)
+alter table denda add constraint fk_denda_detail_peminjaman foreign key (id_detail)
    references detail_peminjaman (id_detail) on delete restrict on update cascade;
-alter table pembayaran add constraint fk_pembayaran_r20 foreign key (id_denda)
+alter table pembayaran add constraint fk_pembayaran_denda foreign key (id_denda)
    references denda (id_denda) on delete restrict on update cascade;
-alter table pembayaran add constraint fk_pembayaran_r21 foreign key (id_petugas)
+alter table pembayaran add constraint fk_pembayaran_petugas foreign key (id_petugas)
    references petugas (id_petugas) on delete restrict on update cascade;
-alter table notifikasi add constraint fk_notifikasi_r24 foreign key (id_anggota)
+alter table notifikasi add constraint fk_notifikasi_anggota foreign key (id_anggota)
    references anggota (id_anggota) on delete cascade on update cascade;
-alter table notifikasi add constraint fk_notifikasi_r26 foreign key (id_detail)
+alter table notifikasi add constraint fk_notifikasi_detail_peminjaman foreign key (id_detail)
    references detail_peminjaman (id_detail) on delete set null on update cascade;
-alter table notifikasi add constraint fk_notifikasi_r27 foreign key (id_reservasi)
+alter table notifikasi add constraint fk_notifikasi_reservasi foreign key (id_reservasi)
    references reservasi (id_reservasi) on delete set null on update cascade;
-alter table log_audit add constraint fk_log_audit_r25 foreign key (id_akun)
+alter table log_audit add constraint fk_log_audit_akun foreign key (id_akun)
    references akun (id_akun) on delete no action on update cascade;
 
 create unique index uq_detail_eksemplar_aktif on detail_peminjaman (id_eksemplar) where status_detail = 'AKTIF';
