@@ -31,10 +31,6 @@ gambar/               diagram CDM, LDM, PDM (lengkap dan per bagian) dan peta ak
 
 ## Catatan pengerjaan
 
-Sama seperti P3, PowerDesigner tidak dipasang. Berkas .cdm, .ldm, dan .pdm dibangkitkan dalam format XML
-PowerDesigner dari spesifikasi model, dan diagram digambar dengan notasi PowerDesigner (Graphviz). Ketiga berkas
-belum pernah dibuka di PowerDesigner asli, ini juga ditulis di Open Issue laporan.
-
 DDL diuji di PostgreSQL 18.6: 42 uji constraint dari P3 tetap lolos dan 17 uji referential integrity baru (cascade,
 restrict berantai, set null yang ditahan CHECK, set default, no action, on update cascade) berjalan sesuai rancangan.
 
