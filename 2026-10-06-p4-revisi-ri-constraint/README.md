@@ -7,7 +7,7 @@ relationship di PDM dan indexing. Dikerjakan individu. Deadline Senin 12 Oktober
 
 ```
 Tugas_P4_2B_048.zip   berkas yang dikumpulkan (isi: .pdf, .cdm, .ldm, .pdm, .sql)
-Tugas_P4_2B_048.pdf   laporan 50 halaman
+Tugas_P4_2B_048.pdf   laporan 41 halaman
 Tugas_P4_2B_048.cdm   Conceptual Data Model, 19 entitas, 28 relasi bernama jelas, 23 domain, 42 business rule
 Tugas_P4_2B_048.ldm   Logical Data Model
 Tugas_P4_2B_048.pdm   Physical Data Model PostgreSQL, integritas referensial per reference, 24 index
@@ -35,4 +35,8 @@ DDL diuji di PostgreSQL 18.6: 42 uji constraint dari P3 tetap lolos dan 17 uji r
 restrict berantai, set null yang ditahan CHECK, set default, no action, on update cascade) berjalan sesuai rancangan.
 
 Tiga masukan dosen di Pertemuan 4 (lewat teman sekelas): nama relasi harus jelas, model diperiksa dengan Check
-Model lalu error-nya diperbaiki, dan ERD disesuaikan lagi dengan business rule. Ketiganya dibahas di BAB II dan III.
+Model lalu error-nya diperbaiki, dan ERD disesuaikan lagi dengan business rule. Ketiganya dirangkum di BAB II.
+
+12 Oktober 2026: atas permintaan Ghaisan, bagian yang tidak diminta dosen dibuang dari laporan, yaitu BAB III lama
+(pemeriksaan model lewat skrip) dan subbab pengujian di bab DDL. Pemeriksaan dan pengujiannya tetap dilakukan,
+hanya tidak dimuat di laporan.
