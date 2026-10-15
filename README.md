@@ -31,7 +31,7 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 | [P3 Pemodelan Data dengan PowerDesigner](2026-09-29-p3-pemodelan-powerdesigner/) | Selasa 29 Sep 2026 | Minggu 4 Okt 2026 23.59 (Teams) | selesai, CDM/LDM/PDM format PowerDesigner + DDL PostgreSQL teruji 42/42, laporan 37 halaman |
 | [P4 Rev Pemodelan Data dan Referential Integrity](2026-10-06-p4-revisi-ri-constraint/) | Selasa 6 Okt 2026 | Senin 12 Okt 2026 23.59 (Teams) | selesai, revisi P3 (nama relasi jelas, check model 87 error jadi 0, ERD sesuai business rule) + aksi RI per relasi + 27 index, uji 42 constraint dan 17 RI lolos, laporan 41 halaman |
 | [P5 Introduction to Data Definition Language](2026-10-13-p5-intro-ddl/) | Selasa 13 Okt 2026 | Kamis 15 Okt 2026 23.59 (Teams) | selesai, pgtutorial.com Section 1 dan 3 (13 latihan) dijalankan di PostgreSQL 18.6, 30 screenshot layar penuh, lembar jawaban 29 halaman |
-| [Teori 6 Latihan Aljabar Relasional](2026-10-15-teori-6-latihan-aljabar-relasional/) | Kamis 15 Okt 2026 | Jumat 16 Okt 2026 11.00 (tulis tangan, di meja dosen) | jawaban 8 soal plus cara singkat per soal sudah jadi (2 halaman PDF), tinggal disalin tulis tangan |
+| [Teori 6 Latihan Aljabar Relasional](2026-10-15-teori-6-latihan-aljabar-relasional/) | Kamis 15 Okt 2026 | Jumat 16 Okt 2026 11.00 (tulis tangan, di meja dosen) | jawaban 8 soal sudah jadi (1 halaman PDF), tinggal disalin tulis tangan |
 
 ## Pertemuan teori
 
