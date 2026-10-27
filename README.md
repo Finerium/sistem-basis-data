@@ -33,6 +33,7 @@ Buku acuan teori: Silberschatz, Korth, Sudarshan, *Database System Concepts*.
 | [P5 Introduction to Data Definition Language](2026-10-13-p5-intro-ddl/) | Selasa 13 Okt 2026 | Kamis 15 Okt 2026 23.59 (Teams) | selesai, pgtutorial.com Section 1 dan 3 (13 latihan) dijalankan di PostgreSQL 18.6, 30 screenshot layar penuh, lembar jawaban 29 halaman |
 | [Teori 6 Latihan Aljabar Relasional](2026-10-15-teori-6-latihan-aljabar-relasional/) | Kamis 15 Okt 2026 | Jumat 16 Okt 2026 11.00 (tulis tangan, di meja dosen) | jawaban 8 soal sudah jadi (1 halaman PDF), tinggal disalin tulis tangan |
 | [P6.1 Integrity Constraint dan P6.2 Introduction to DML](2026-10-20-p6-dml-integrity/) | Selasa 20 Okt 2026 | Senin 26 Okt 2026 23.59 (Teams) | selesai, P6.1 laporan 11 halaman (7 business rules, 6 percobaan INSERT dan UPDATE semuanya berhasil), P6.2 schema HR + 61 latihan slide + 3 pertanyaan di PostgreSQL 18.6, 76 screenshot layar penuh, lembar jawaban 68 halaman |
+| [P7 DML: Join Tables](2026-10-27-p7-dml-join/) | Selasa 27 Okt 2026 | Selasa 3 Nov 2026 23.59 (Teams) | selesai, materi slide join (WHERE, INNER, LEFT, RIGHT, FULL, tiga tabel, self join, UNION, INTERSECT, EXCEPT, GROUP BY) dalam 42 latihan di PostgreSQL 18.6, 42 screenshot layar penuh, lembar jawaban 43 halaman |
 
 ## Pertemuan teori
 
